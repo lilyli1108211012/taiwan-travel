@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="icon" href="image/icon.png" sizes="60*60" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="themes/themes.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+     <style>
+         .ui-header {
+             display: flex;
+             flex-direction: column;
+             align-content: center;
+         }
+         .ui-body-c, .ui-header {
+        font-family:'Noto Sans TC', sans-serif;
+        }
+        .ui-footer {
+        font-family:'Noto Sans TC', sans-serif;
+        }
+        .video-wrapper{
+        position: relative;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+    }
+
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0; 
+        width: 100%;
+        height: 100%;
+    }
+
+    #home img{
+        width: 100%;    
+       height: 100%;
+    }
+
+    #about img{
+        width: 100%;
+        height: 100%;
+    }
+
+     </style>
+
+    <title>Formosa寶島</title>
+</head>
+<body>
+    
+    <!--首頁-->
+    <div data-role="page" id="home">
+
+        <div data-role="header">
+
+            <h1>Formosa寶島</h1>
+         <img src="image/1.jpeg" alt="">
+                
+            </ul>
+        </div>
+         <div role="main" class="ui-content">
+            <h2>來台灣挖寶囉~</h2>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#page01">
+                    <img src="https://picsum.photos/250" alt="">
+                    <h2>歷史地理</h2>
+                    <p>歷史----</p>
+                </a></li>
+
+                <li><a href="#page02">
+                    <img src="https://picsum.photos/400" alt="">
+                    <h2>特色景點</h2>
+                    <p>景點----</p>
+                </a></li>
+
+                <li><a href="#page03">
+                    <img src="https://picsum.photos/600" alt="">
+                    <h2>在地美食</h2>
+                    <p>美食----</p>
+                </a></li>
+
+                <li><a href="#page04">
+                    <img src="https://picsum.photos/300" alt="">
+                    <h2>交通資訊</h2>
+                    <p>交通----</p>
+                </a></li>
+                <li><a href="#about">
+                    <img src="https://picsum.photos/500" alt="">
+                    <h2>關於我們</h2>
+                    <p>我們----</p>
+                </a></li>
+            </ul>
+         </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Lily</h4> 
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page01" data-icon="bullets">歷史地理</a></li>
+                    <li><a href="#page02" data-icon="bullets">特色景點</a></li>
+                    <li><a href="#page03" data-icon="bullets">在地美食</a></li>
+                    <li><a href="#page04" data-icon="bullets">交通資訊</a></li>
+                    <li><a href="#about" data-icon="bullets">關於我們</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div><!--首頁-->
+
+       
+    <!--歷史地理-->
+    <div data-role="page" id="page01">
+
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+
+            <h1>台灣趴趴走</h1>
+        </div>
+         <div role="main" class="ui-content">
+            <h2>歷史地理</h2>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ktLMfM_5UOc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
+            </div>
+            <p>從生活、經濟的型態來看的話，三、四百年來的台灣社會有著非常濃厚的海洋文化性格。所謂海洋文化性格，是相對於大陸文化而言。近代的海洋文化較具有濃厚的商業根性，它是比較具有流動性的、開放性的、多元性的、包涵性的﹔而大陸文化，是建立在農業的基礎上，由於農業是安土重遷的，因此它是一個比較封閉、保守、靜態的社會。</p>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Lily</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="bullets">首頁</a></li>
+                    <li><a href="#page02" data-icon="bullets">特色景點</a></li>
+                    <li><a href="#page03" data-icon="bullets">在地美食</a></li>
+                    <li><a href="#page04" data-icon="bullets">交通資訊</a></li>
+                    <li><a href="#about" data-icon="bullets">關於我們</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div><!--歷史地理-->
+
+     <!--特色景點-->
+     <div data-role="page" id="page02">
+
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+
+            <h1>台灣趴趴走</h1>
+        </div>
+         <div role="main" class="ui-content">
+            <h2>特色景點</h2>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uenKVBBmkmk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
+            </div>
+            <p>在人情味十足的寶島，我們更有理由探索人與人之間的連結。小時候不管是校外教學、畢業旅行或者包遊覽車旅遊，總是不免俗地上車睡覺下車尿尿，匆匆跑行程，用「心」旅行就是增進人與人的連結，去最接地氣的去處，偏離購物的軌道，體驗在地民情。有三處地標讓你可以從「心」出發，和當地人交流很簡單，只要願意敞開心胸，大家都很開心可以哈啦幾句。</p>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Lily</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="bullets">首頁</a></li>
+                    <li><a href="#page01" data-icon="bullets">歷史地理</a></li>
+                    <li><a href="#page03" data-icon="bullets">在地美食</a></li>
+                    <li><a href="#page04" data-icon="bullets">交通資訊</a></li>
+                    <li><a href="#about" data-icon="bullets">關於我們</a></li>
+                </ul>
+            </div>
+           
+        </div>
+
+    </div><!--特色景點-->
+
+     <!--在地美食-->
+     <div data-role="page" id="page03">
+
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+
+            <h1>台灣趴趴走</h1>
+        </div>
+         <div role="main" class="ui-content">
+            <h2>在地美食</h2>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/n_BO8G87clk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
+            </div>
+
+            <p>台灣小吃是一類富有台灣生活與文化特色的街頭小吃的總稱[1]，與澎湖小吃、馬祖小吃以及金門小吃共築中華民國四大地區的美食文化。台灣小吃的特色是就地取材。因為台灣島四面環海、漁產豐富，因此海鮮是街頭常見的料理種類之一</p>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Lily</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="bullets">首頁</a></li>
+                    <li><a href="#page01" data-icon="bullets">歷史地理</a></li>
+                    <li><a href="#page02" data-icon="bullets">特色景點</a></li>
+                    <li><a href="#page04" data-icon="bullets">交通資訊</a></li>
+                    <li><a href="#about" data-icon="bullets" >關於我們</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div><!--在地美食-->
+
+     <!--交通資訊-->
+     <div data-role="page" id="page04">
+
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+
+            <h1>台灣趴趴走</h1>
+        </div>
+         <div role="main" class="ui-content">
+            <h2>交通資訊</h2>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/buZWQthZMsU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
+         </div>
+         <p>台灣的大眾運輸公共交通非常完善，大部分的旅遊景點，包括比較偏遠的郊區都有交通工具抵達。在台灣有很多人沒有自己的交通工具，上下班或出門遊玩都依靠大眾運輸。以下為大家介紹台灣的公共交通工具。</p>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Lily</h4>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="bullets">首頁</a></li>
+                    <li><a href="#page01" data-icon="bullets">歷史地理</a></li>
+                    <li><a href="#page02" data-icon="bullets">特色景點</a></li>
+                    <li><a href="#page03" data-icon="bullets">在地美食</a></li>
+                    <li><a href="#about" data-icon="bullets" >關於我們</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div><!--交通資訊-->
+
+     <!--關於我們-->
+     <div data-role="page" id="about" data-dialog="true">
+
+        <div data-role="header">
+            <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
+
+            <h1>台灣趴趴走</h1>
+        </div>
+         <div role="main" class="ui-content">
+            <h2>關於我們</h2>
+            
+            <p>自然景觀與生態系資源相當豐富而多元,臺灣曾普遍稱為「福爾摩沙」，意為「美麗島」。在1544年當時葡萄牙船隻在經過臺灣海面時，水手從海上遠望臺灣，發現臺灣甚為美麗，於是高呼「Ilha Formosa」，葡萄牙語的「Formosa」為「美麗」之意。</p>
+         </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2020 Wenzao DCAM Lily</h4>
+           
+        </div>
+
+    </div><!--關於我們-->
+</body>
+</html>
